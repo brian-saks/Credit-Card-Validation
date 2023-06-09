@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    
+    <title>Credit Card Validation</title>
+
+    <!----- CSS ----->
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="form-div">
+        <form id="input-form" action="">
+          <div id="number-div">
+            <p>CARD NUMBER</p>
+            <input 
+              type="text" 
+              name="number-input" 
+              id="number-input" 
+              placeholder="XXXX XXXX XXXX XXXX"
+              maxlength="19"
+              required>
+          </div>
+
+          <div id="date-cvv-wrapper">
+            <div class="date-div">
+              <p>VAID THRUE</p>
+              <input 
+                type="text" 
+                name="date-input" 
+                id="date-input" 
+                placeholder="Valid-Thrue"
+                maxlength="5"
+                required>
+              <label id="date-label" for="date-input">MM/YY</label>
+            </div>
+            
+            <div id="cvv-div">
+              <p>CVV</p>
+              <input 
+                type="text" 
+                name="cvv-input" 
+                id="cvv-input" 
+                placeholder="CVV"
+                maxlength="4"
+                required>
+            </div>
+          </div>
+
+          <div id="holder-div">
+            <p>HOLDER</p>
+            <input 
+              type="text" 
+              name="name-input" 
+              id="name-input" 
+              placeholder="Enter holder"
+              required>
+          </div>
+          
+          <div id="btn-div">
+            <button id="btn-save">SAVE</button>
+            <button id="btn-cancel">CANCEL</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="card-div">
+        <div id="card">
+          <div id="card-div-credit"> 
+            <p>CREDIT CARD</p>
+          </div>
+
+          <div id="card-div-number">
+            <p id="number-display">XXXX XXXX XXXX XXXX</p>
+          </div>
+          
+          <div id="card-div-date">
+            <p>Vailid-Thrue:</p>
+            <p id="date-display">MM/YY</p>
+          </div>
+
+          <div id="card-div-name">
+            <p id="name-display">BRIAN LUCAS SAKS GRIGA</p>
+          </div>
+
+
+          <img id="validation-image" src="" alt="Validation Image" style="display: none">
+        </div>
+        
+      </div>
+    </div>
+
+    <!----- JS ----->
+    <script src="app.js"></script>
+  </body>
+</html>
