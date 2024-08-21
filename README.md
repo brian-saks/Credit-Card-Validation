@@ -25,11 +25,11 @@ Clone the repository
 
 Navigate to the project directory 
     
-         cd credit-card-validation
+        cd credit-card-validation
 
 Install the dependencies 
             
-            npm install
+        npm install
 
 
 ## Usage
