@@ -1,1 +1,51 @@
-Credit Card Validation App This is a simple web application for credit card validation. It consists of a single application file that serves as both the frontend and backend. Prerequisites: - Node.js (version 18.16.0) - npm (version 9.5.1) Installation: 1. Clone the repository: git clone <repository-url> 2. Navigate to the project directory: cd credit-card-validation 3. Install the dependencies: npm install Usage: 1. Start the application: node index.js 2. Open a web browser and visit http://localhost:3000 to access the application. 3. Enter credit card information in the provided form and submit for validation. Additional Notes: - The application uses the Express.js framework to handle HTTP requests and serve static files. - The "index.html" file contains the HTML structure of the page. - The "styles.css" file contains the CSS styles for the page. - The "app.js" file contains the server-side logic and API endpoints for credit card validation. - The backend server runs on port 3000 by default. If you need to change the port, modify the "PORT" variable in "index.js".
+
+# 💳 Credit Card Validation App
+
+This is a simple web application for credit card validation. It consists of a single application file that serves as both the frontend and backend.
+
+
+## Validation Algortihm
+The algorithm for de credit card validation consists on 4 steps:
+
+- The expiry date of the credit card (year and month) must be AFTER present time
+- The CVV (security code) of the credit card must be exactly 3 digits long unless it’s an American Express card, in which case the CVV must be exactly 4 digits long. American Express are cards whose PAN (card numbers) starts with either “34” or “37”
+- The PAN (card number) is between 16 and 19 digits long
+- Last digit of the PAN (card number) is checked using Luhn’s algorithm
+
+The Luhn algorithm is a simple checksum formula used to validate identification numbers. It works by reversing the number, doubling every second digit, subtracting 9 from any result higher than 9, and summing all the digits. If the total is divisible by 10, the number is valid
+
+## Prerequisites:
+- Node.js (version 18.16.0) 
+- npm (version 9.5.1) 
+
+## Installation
+Clone the repository 
+
+        git clone <repository-url> 
+
+Navigate to the project directory 
+    
+         cd credit-card-validation
+
+Install the dependencies 
+            
+            npm install
+
+
+## Usage
+Start the application
+
+        node index.js 
+
+Open a web browser at 
+        
+        http://localhost:3000 
+
+Enter credit card information in the provided form and submit for validation.
+
+## Notes
+- The application uses the Express.js framework to handle HTTP requests and serve static files. 
+- The "index.html" file contains the HTML structure of the page. 
+- The "styles.css" file contains the CSS styles for the page. 
+- The "app.js" file contains the server-side logic and API endpoints for credit card validation. 
+- The backend server runs on port 3000 by default. If you need to change the port, modify the "PORT" variable in "index.js".
