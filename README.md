@@ -5,14 +5,14 @@ This is a simple web application for credit card validation. It consists of a si
 
 
 ## Validation Algortihm
-The algorithm for de credit card validation consists on 4 steps:
+The credit card validation process involves checking the following:
 
-- The expiry date of the credit card (year and month) must be AFTER present time
-- The CVV (security code) of the credit card must be exactly 3 digits long unless it’s an American Express card, in which case the CVV must be exactly 4 digits long. American Express are cards whose PAN (card numbers) starts with either “34” or “37”
-- The PAN (card number) is between 16 and 19 digits long
-- Last digit of the PAN (card number) is checked using Luhn’s algorithm
+- The expiry date of the credit card (year and month) must be AFTER present time.
+- The CVV (security code) of the credit card must be exactly 3 digits long unless it’s an American Express card, in which case the CVV must be exactly 4 digits long. American Express are cards whose PAN (card numbers) starts with either “34” or “37”.
+- The PAN (card number) is between 16 and 19 digits long.
+- Last digit of the PAN (card number) is checked using Luhn’s Algorithm.
 
-The Luhn algorithm is a simple checksum formula used to validate identification numbers. It works by reversing the number, doubling every second digit, subtracting 9 from any result higher than 9, and summing all the digits. If the total is divisible by 10, the number is valid
+The [Luhn’s Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) is a simple checksum formula used to validate identification numbers. It works by reversing the number, doubling every second digit, subtracting 9 from any result higher than 9, and summing all the digits. If the total is divisible by 10, the number is valid
 
 ## Prerequisites:
 - Node.js (version 18.16.0) 
