@@ -17,7 +17,7 @@ The credit card validation process used involves checking the following:
 
 The [Luhn’s Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) is a simple checksum formula used to validate identification numbers. It works by reversing the number, doubling every second digit, subtracting 9 from any result higher than 9, and summing all the digits. If the total is divisible by 10, the number is valid
 
-## Prerequisites:
+## Prerequisites
 - Node.js (version 18.16.0) 
 - npm (version 9.5.1) 
 
