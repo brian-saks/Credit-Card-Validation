@@ -21,7 +21,7 @@ The [Luhn’s Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) is a simp
 ## Installation
 Clone the repository 
 
-        git clone git clone https://github.com/brian-saks/Credit-Card-Validation
+        git clone https://github.com/brian-saks/Credit-Card-Validation
  
 
 Navigate to the project directory 
