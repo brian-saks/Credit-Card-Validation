@@ -4,8 +4,11 @@
 This is a simple web application for credit card validation. It consists of a single application file that serves as both the frontend and backend.
 
 
-## Validation Algortihm
-The credit card validation process involves checking the following:
+## About
+This is a personal proyect used to practise Node.js
+The main focus was on the use of Backend API.
+
+The credit card validation process used involves checking the following:
 
 - The expiry date of the credit card (year and month) must be AFTER present time.
 - The CVV (security code) of the credit card must be exactly 3 digits long unless it’s an American Express card, in which case the CVV must be exactly 4 digits long. American Express are cards whose PAN (card numbers) starts with either “34” or “37”.
